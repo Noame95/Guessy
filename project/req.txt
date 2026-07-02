@@ -1,0 +1,7 @@
+pycryptodome==3.20.0
+numpy
+tensorflow
+scikit-learn
+pygame
+matplotlib
+pillow
