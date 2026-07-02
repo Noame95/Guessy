@@ -65,19 +65,19 @@ class MainWindow:
         self.window.bind("<MouseWheel>", self.mouse_wheel)
         self.file_label = None
         self.paint_canvas = None
-        self.brush_size = tk.IntVar(value=20)  # עוצמת ברירת מחדל
+        self.brush_size = tk.IntVar(value=20) 
         self.send_button = None
         self.upload_button = None
         self.paint_canvas = None
-        self.uploaded_file_data = None  # המידע של הקובץ שעלה
-        self.current_channel = None  # הערוץ הנוכחי שהלקוח נמצא בו
-        self.files_list = None  # רשימת הקבצים שצריכים לראות בגרפיקה
-        self.has_loaded_files = False  # האם הקבצים נטענו כך שנוכל להעתיק או להוריד אותם?
-        self.folders_list = None  # התיקיות שצריכים לראות בגרפיקה
-        self.has_loaded_folders = False  # האם התיקיות נטענו כך שנוכל להכנס אליהם?
-        self.selected_other_folder_name = None  # איזו תיקייה הלקוח בחר מבין שאר המשתמשים?
-        self.deleted_file = None  # מהו הקובץ שהלקוח רוצה להגיד לשרת למחוק?
-        self.waiting_for_reaction = False  # האם הלקוח צריך להגיד לשרת אם צדק או לא? כלומר, האם אסור לו לעבור ערוצים ברגע זה?
+        self.uploaded_file_data = None 
+        self.current_channel = None 
+        self.files_list = None 
+        self.has_loaded_files = False 
+        self.folders_list = None  
+        self.has_loaded_folders = False 
+        self.selected_other_folder_name = None  
+        self.deleted_file = None  
+        self.waiting_for_reaction = False 
 
         self.channels = {
             self.INSTRUCTIONS_CHANNEL: self.show_instructions,
